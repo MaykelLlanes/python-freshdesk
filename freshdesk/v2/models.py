@@ -54,7 +54,8 @@ class Ticket(FreshdeskModel):
 
     @property
     def source(self):
-        _s = {1: "email", 2: "portal", 3: "phone", 4: "forum", 5: "twitter", 6: "facebook", 7: "chat"}
+        _s = {1: "email", 2: "portal", 3: "phone", 4: "forum", 5: "twitter", 6: "facebook", 7: "chat"
+              , 9: "Feedback Widget", 10: "Outbound Email" }
         return _s[self._source]
 
 
